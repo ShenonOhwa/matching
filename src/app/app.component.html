@@ -1,0 +1,35 @@
+<div>
+	Premier profil de tests :
+	
+	<ul>
+		<li *ngFor="let p of m_profilA">
+			<span>Role : {{ p.role }}</span>
+			
+			<br />
+			
+			<span>Pourcentage : {{ p.average }} %</span>
+		</li>
+	</ul>
+</div>
+
+<div>
+	Second profil de tests :
+	
+	<ul>
+		<li *ngFor="let p of m_profilB">
+			<span>Role : {{ p.role }}</span>
+			
+			<br />
+			
+			<span>Pourcentage : {{ p.average }} %</span>
+		</li>
+	</ul>
+</div>
+
+<div>
+	Matching : {{ m_pourcentageMatching }} %
+	
+	<br />
+	
+	<button (click)="exec()">Cliquez pour obtenir le résultat réel du matching</button>
+</div>
